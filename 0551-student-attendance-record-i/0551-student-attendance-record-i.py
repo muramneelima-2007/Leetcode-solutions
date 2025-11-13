@@ -6,13 +6,13 @@ class Solution:
             if(i=='A'):
                 absent+=1 
                 late=0
+                if(absent>=2):
+                    return False
             elif(i=='L'):
                 late+=1 
                 if(late>=3):
                     return False
             elif(i=='P'):
                 late=0 
-        if(late<3 and absent<2):
-            return True
-        return False
+        return True
             
