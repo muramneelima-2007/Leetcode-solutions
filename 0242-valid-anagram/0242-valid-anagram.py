@@ -3,7 +3,7 @@ class Solution:
         p=Counter(s)
         c=Counter(t)
         if(sorted(p.keys()) != sorted(c.keys())):
-            return False
+            return False 
         for key,value in c.items():
             if(c[key]==p[key]):
                 continue
