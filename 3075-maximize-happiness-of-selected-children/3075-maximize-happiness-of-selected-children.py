@@ -11,7 +11,10 @@ class Solution:
             if(len(happiness)==1):
                 return total
             happiness.pop()
-            happiness[-1]=happiness[-1]-c
+            if((happiness[-1]-c)>0):
+                happiness[-1]=happiness[-1]-c
+            else:
+                happiness[-1]=0
             k=k-1
             c=c+1
         return total
