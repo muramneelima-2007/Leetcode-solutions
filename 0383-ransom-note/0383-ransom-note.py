@@ -1,9 +1,7 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        r=list(ransomNote)
-        m=list(magazine)
-        r.sort()
-        m.sort()
+        m=magazine
+        r=ransomNote
         n=len(m)
         k1=0
         k2=0
