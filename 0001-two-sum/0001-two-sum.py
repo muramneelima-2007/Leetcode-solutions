@@ -7,6 +7,5 @@ class Solution:
                 if(nums[i]+nums[j]==target):
                     li=[i,j]
                     break
-            if(len(li)==2):
-                break
+            
         return li
