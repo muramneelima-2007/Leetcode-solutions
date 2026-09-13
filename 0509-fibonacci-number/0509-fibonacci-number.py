@@ -1,10 +1,12 @@
 class Solution:
     def fib(self, n: int) -> int:
-        def fibanacci(n):
-            if(n==0):
-                return 0
-            elif(n==1):
-                return 1
-            else:
-                return fibanacci(n-1)+fibanacci(n-2)
-        return fibanacci(n)
+        if(n<=1):
+            return n
+        p1=0
+        p2=1
+        cur=0
+        for i in range(2,n+1):
+            cur=p1+p2 
+            p1=p2 
+            p2=cur 
+        return cur
