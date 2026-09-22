@@ -8,3 +8,4 @@ class Solution:
                     if(nums[i]==nums[j+1]):
                         c=c+1 
         return c
+        
